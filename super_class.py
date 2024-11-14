@@ -58,3 +58,23 @@ print(f"{triangle.height}cm")
 circle.describe()
 squre.describe()
 triangle.describe()
+## Output :
+5]
+# Super class or function (Shape)
+class Shape:
+    def __init__(self,color, is_filled):
+        self.color = color
+        self.is_filled = is_filled
+    def describe(self):
+      print(f"It is {self.color}  {'filled' if self.is_filled else 'not_filled'} ")    
+ 
+class Circle(Shape):
+    def __init__(self,color, is_filled, radius):
+
+## red True  5cm
+## yellow False 6cm
+## blue True  6cm  8cm
+## It is  Circle  with an area of 78.5  
+## It is red  filled 
+## It is yellow  not_filled 
+## It is blue  filled 
